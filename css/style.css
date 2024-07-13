@@ -68,6 +68,9 @@ img {
     display: flex;
     gap: 40px;
     margin: 24px 0;
+}
+
+.site-parts-item {
     padding: 24px 0;
 }
 
