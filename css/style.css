@@ -690,10 +690,6 @@ img {
     margin-bottom: 4px;
 }
 
-.input-container {
-    position: relative;
-}
-
 .input {
     padding-left: 38px;
     border: 1px solid rgba(46, 47, 66, 0.4);
