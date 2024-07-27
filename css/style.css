@@ -773,8 +773,6 @@ img {
     left: -24px;
     top: 50%;
     transform: translateY(-50%);
-
-    display: inline-flex;
 }
 
 .acceptance:checked+.checkbox-label>.checkbox-replacement {
