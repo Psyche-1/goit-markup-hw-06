@@ -604,7 +604,6 @@ img {
 
 .modal-overlay.is-open {
     opacity: 1;
-    visibility: hidden;
 
     pointer-events: auto;
 }
@@ -623,6 +622,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -751,6 +751,11 @@ img {
     margin-bottom: 24px;
 }
 
+.checkbox-label {
+    position: relative;
+    left: 24px;
+}
+
 .checkbox-replacement {
     width: 16px;
     height: 16px;
@@ -761,9 +766,14 @@ img {
     justify-content: center;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.acceptance:checked+.checkbox-replacement {
+.acceptance:checked+.checkbox-label>.checkbox-replacement {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
