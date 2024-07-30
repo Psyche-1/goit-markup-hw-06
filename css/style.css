@@ -752,11 +752,6 @@ img {
     margin-bottom: 24px;
 }
 
-.checkbox-label {
-    position: relative;
-    left: 24px;
-}
-
 .checkbox-replacement {
     width: 16px;
     height: 16px;
@@ -768,10 +763,7 @@ img {
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    position: absolute;
-    left: -24px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 8px;
 }
 
 .acceptance:checked+.checkbox-label>.checkbox-replacement {
